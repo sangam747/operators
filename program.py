@@ -1,109 +1,64 @@
-# Arithmetic Operators in Python
+# Samples of Operators
+# Arithmetic Operators
+print("Addition: ", 7 + 2)              # 9
+print("Subtraction: ", 7 - 2)           # 5
+print("Multiplication: ", 7 * 2)        # 14
+print("Division: ", 7 / 2)              # 3.5
+print("Modulus: ", 7 % 2)               # 1
+print("Exponentiation: ", 7 ** 2)       # 49
+print("Floor Division: ", 7 // 2)       # 3
 
-# 1. Addition (+)
-print("Addition")
-print("10 + 5 =", 10 + 5)
-print("2.5 + 3.5 =", 2.5 + 3.5)
+# Comparison (Relational) Operators
+print("Equal: ", 7 == 2)                # False
+print("Not Equal: ", 7 != 2)            # True
+print("Greater Than: ", 7 > 2)          # True
+print("Less Than: ", 7 < 2)             # False
+print("Greater Than or Equal To: ", 7 >= 2)  # True
+print("Less Than or Equal To: ", 7 <= 2)     # False
 
-# 2. Subtraction (-)
-print("\nSubtraction")
-print("20 - 8 =", 20 - 8)
-print("5 - 12 =", 5 - 12)
+# Assignment Operators
+x = 20
+x += 6
+print("Add Assignment: ", x)             # 26
+x -= 4
+print("Subtract Assignment: ", x)        # 22
+x *= 3
+print("Multiply Assignment: ", x)        # 66
+x /= 6
+print("Divide Assignment: ", x)          # 11.0
+x //= 2
+print("Floor Divide Assignment: ", x)    # 5.0
+x %= 3
+print("Modulus Assignment: ", x)         # 2.0
+x **= 4
+print("Exponent Assignment: ", x)        # 16.0
 
-# 3. Multiplication (*)
-print("\nMultiplication")
-print("6 * 7 =", 6 * 7)
-print("2.5 * 4 =", 2.5 * 4)
+# Logical Operators
+print("Logical AND: ", True and True)    # True
+print("Logical OR: ", False or False)    # False
+print("Logical NOT: ", not False)        # True
 
-# 4. Division (/) - returns a float
-print("\nDivision")
-print("20 / 4 =", 20 / 4)
-print("7 / 2 =", 7 / 2)
+# Bitwise Operators (12 = 1100, 10 = 1010)
+print("Bitwise AND: ", 12 & 10)          # 8
+print("Bitwise OR: ", 12 | 10)           # 14
+print("Bitwise XOR: ", 12 ^ 10)          # 6
+print("Bitwise NOT: ", ~12)              # -13
 
-# 5. Floor Division (//) - rounds the result down
-print("\nFloor Division")
-print("17 // 5 =", 17 // 5)
-print("-17 // 5 =", -17 // 5)
+# Left shift — multiply by powers of 2
+print("Left Shift 1: ", 3 << 1)          # 6  (3 × 2)
+print("Left Shift 2: ", 3 << 3)          # 24 (3 × 8)
 
-# 6. Modulus (%) - returns the remainder
-print("\nModulus")
-print("17 % 5 =", 17 % 5)
-print("20 % 4 =", 20 % 4)
+# Right shift — divide by powers of 2
+print("Right Shift 1: ", 48 >> 1)        # 24 (48 ÷ 2)
+print("Right Shift 2: ", 48 >> 3)        # 6  (48 ÷ 8)
 
-# 7. Exponentiation (**) - power
-print("\nExponentiation")
-print("2 ** 3 =", 2 ** 3)
-print("5 ** 2 =", 5 ** 2)
+# Membership Operators
+print("Membership: ", 15 in [5, 10, 15, 20, 25])         # True
+print("Not Membership: ", 12 not in [5, 10, 15, 20, 25]) # True
 
-
-# Assignment Operators in Python
-
-# 1. Assign (=)
-print("Assign (=)")
-a = 10
-print("a = 10 ->", a)
-name = "Python"
-print('name = "Python" ->', name)
-
-# 2. Add and assign (+=)
-print("\nAdd Assign (+=)")
-a = 10
-a += 5
-print("a = 10; a += 5 ->", a)
-b = 2.5
-b += 1.5
-print("b = 2.5; b += 1.5 ->", b)
-
-# 3. Subtract and assign (-=)
-print("\nSubtract Assign (-=)")
-a = 20
-a -= 8
-print("a = 20; a -= 8 ->", a)
-b = 5
-b -= 12
-print("b = 5; b -= 12 ->", b)
-
-# 4. Multiply and assign (*=)
-print("\nMultiply Assign (*=)")
-a = 6
-a *= 7
-print("a = 6; a *= 7 ->", a)
-b = 2.5
-b *= 4
-print("b = 2.5; b *= 4 ->", b)
-
-# 5. Divide and assign (/=)
-print("\nDivide Assign (/=)")
-a = 20
-a /= 4
-print("a = 20; a /= 4 ->", a)
-b = 7
-b /= 2
-print("b = 7; b /= 2 ->", b)
-
-# 6. Floor divide and assign (//=)
-print("\nFloor Divide Assign (//=)")
-a = 17
-a //= 5
-print("a = 17; a //= 5 ->", a)
-b = -17
-b //= 5
-print("b = -17; b //= 5 ->", b)
-
-# 7. Modulus and assign (%=)
-print("\nModulus Assign (%=)")
-a = 17
-a %= 5
-print("a = 17; a %= 5 ->", a)
-b = 20
-b %= 4
-print("b = 20; b %= 4 ->", b)
-
-# 8. Power and assign (**=)
-print("\nPower Assign (**=)")
-a = 2
-a **= 3
-print("a = 2; a **= 3 ->", a)
-b = 5
-b **= 2
-print("b = 5; b **= 2 ->", b)
+# Identity Operators
+a = [4, 5, 6]
+b = a
+c = [4, 5, 6]
+print("Identity: ", a is b)              # True
+print("Non-Identity: ", a is not c)      # True
